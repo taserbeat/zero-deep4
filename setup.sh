@@ -15,6 +15,10 @@ fi
 
 export PIPENV_VENV_IN_PROJECT=true
 
+# For installing scipy
+# https://github.com/pypa/pipenv/issues/4564#issuecomment-756625303
+export SYSTEM_VERSION_COMPAT=1
+
 if [ -e ./Pipfile.lock ]; then
   echo "Pipfile.lock is found."
   echo "Running 'pipenv sync --dev'"

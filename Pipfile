@@ -11,7 +11,8 @@ numpy = "==1.23.2"
 matplotlib = "==3.5.3"
 dezero = "==0.0.13"
 torch = {file = "https://files.pythonhosted.org/packages/c6/3d/458fd09b2c9f6a4192682b767b62394018711f5c44f366bfce6c3d250aca/torch-1.12.1-cp38-none-macosx_10_9_x86_64.whl"}
-gym = "==0.26.1"
+scipy = "==1.9.1"
+gym = {version = "==0.20.0", extras = ["classic_control"]}
 
 [dev-packages]
 autopep8 = "==1.7.0"
